@@ -25,5 +25,60 @@ img.full-height {
 	text-align: center;
 }
 
+/* Minimal dark theme */
 
+body {
+  background-color: #000000;
+  color: #ffffff;
+  font-family: 'Helvetica Neue', sans-serif;
+}
 
+a {
+  color: #00bcd4;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.container {
+  padding-top: 40px;
+}
+
+h1, h2, h3 {
+  color: #ffffff;
+}
+
+p {
+  color: #dddddd;
+}
+
+/* Project blocks styling */
+
+.column {
+  background-color: rgba(255, 255, 255, 0.05);
+  padding: 20px;
+  border-radius: 12px;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+  text-align: center;
+}
+
+.column:hover {
+  transform: scale(1.02);
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.column img {
+  border-radius: 8px;
+  max-width: 100%;
+  height: auto;
+}
+
+.column p {
+  margin-top: 10px;
+  color: #eeeeee;
+  font-weight: 300;
+  font-size: 1.1em;
+}
