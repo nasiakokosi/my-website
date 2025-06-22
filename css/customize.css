@@ -84,3 +84,9 @@ h1.half-bottom {
   margin-top: 30px;
   padding: 0 20px;
 }
+.assignment {
+  width: 300px;
+  text-align: center;
+  min-height: 750px; /*  ΠΡΟΣΘΗΚΗ ΓΙΑ ΟΜΟΙΟ ΥΨΟΣ */
+}
+
