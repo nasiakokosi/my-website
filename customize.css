@@ -126,4 +126,10 @@ p {
   height: auto;
   margin-bottom: 10px;
 }
+.assignment {
+  width: 300px;
+  text-align: center;
+  min-height: 750px; /* ➕ ΠΡΟΣΘΗΚΗ ΓΙΑ ΟΜΟΙΟ ΥΨΟΣ */
+}
+
 
