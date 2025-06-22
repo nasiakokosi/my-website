@@ -108,4 +108,37 @@ p {
   font-weight: 300;
   font-size: 1.1em;
 }
+.assignment h2 {
+  color: white;
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.project {
+  flex: 1 1 200px;
+  max-width: 250px;
+  text-align: center;
+}
+
+.project img {
+  width: 100%;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.project img:hover {
+  transform: scale(1.05);
+}
+
+.project p {
+  color: white;
+  margin-top: 10px;
+}
+
 
