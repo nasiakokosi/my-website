@@ -1,0 +1,111 @@
+html {
+  scroll-behavior: smooth;
+}
+
+img.scale-with-grid {
+	width: 100%; /*override existing setting*/
+}
+
+img.full-height {
+	height: 100%; /*override existing setting*/
+}
+
+
+/*MODIFICATIONS*/
+
+.quarter-bottom-rel { margin-bottom: 4% !important; }
+.quarter-bottom { margin-bottom: 25px !important; }
+.half-bottom { margin-bottom: 50px !important; }
+.one-bottom, .add-bottom { margin-bottom: 100px !important; }
+.two-bottoms { margin-bottom: 200px !important; }
+.one-top { margin-top: 100px !important; }
+.two-tops { margin-top: 200px !important; }
+
+.center{
+	text-align: center;
+}
+
+/* Minimal dark theme */
+
+body {
+  background-color: #000000;
+  color: #ffffff;
+  font-family: 'Helvetica Neue', sans-serif;
+}
+
+a {
+  color: #00bcd4;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.container {
+  padding-top: 40px;
+}
+
+h1, h2, h3 {
+  color: #ffffff;
+}
+
+p {
+  color: #dddddd;
+}
+
+/* Project blocks styling */
+
+.column {
+  background-color: rgba(255, 255, 255, 0.05);
+  padding: 20px;
+  border-radius: 12px;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+  text-align: center;
+}
+
+.column:hover {
+  transform: scale(1.02);
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.column img {
+  border-radius: 8px;
+  max-width: 100%;
+  height: auto;
+}
+
+.column p {
+  margin-top: 10px;
+  color: #eeeeee;
+  font-weight: 300;
+  font-size: 1.1em;
+}
+.four.columns {
+  background-color: rgba(255, 255, 255, 0.05);
+  padding: 20px;
+  border-radius: 12px;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+  text-align: center;
+}
+
+.four.columns:hover {
+  transform: scale(1.02);
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.four.columns img {
+  border-radius: 8px;
+  max-width: 100%;
+  height: auto;
+}
+
+.four.columns h5 {
+  margin-top: 10px;
+  color: #eeeeee;
+  font-weight: 300;
+  font-size: 1.1em;
+}
+
