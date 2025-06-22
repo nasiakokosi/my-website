@@ -181,3 +181,24 @@ p {
   margin-bottom: 10px;
 }
 
+.assignments-row {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.assignment {
+  width: 300px;
+  text-align: center;
+  background-color: #111;
+  padding: 10px;
+  border-radius: 12px;
+}
+.assignment img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
