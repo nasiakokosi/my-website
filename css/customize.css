@@ -140,5 +140,23 @@ p {
   color: white;
   margin-top: 10px;
 }
+.assignments-row {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.assignment {
+  width: 300px;
+  text-align: center;
+}
+
+.assignment img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
 
 
