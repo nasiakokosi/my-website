@@ -1,40 +1,75 @@
-html {
-  scroll-behavior: smooth;
-}
-
-img.scale-with-grid {
-	width: 100%; /*override existing setting*/
-}
-
-img.full-height {
-	height: 100%; /*override existing setting*/
-}
-
-
-/*MODIFICATIONS*/
-
-.quarter-bottom-rel { margin-bottom: 4% !important; }
-.quarter-bottom { margin-bottom: 25px !important; }
-.half-bottom { margin-bottom: 50px !important; }
-.one-bottom, .add-bottom { margin-bottom: 100px !important; }
-.two-bottoms { margin-bottom: 200px !important; }
-.one-top { margin-top: 100px !important; }
-.two-tops { margin-top: 200px !important; }
-
-.center{
-	text-align: center;
-}
-
-/* Minimal dark theme */
-
+/* Γενικές ρυθμίσεις */
 body {
-  background-color: #000000;
-  color: #ffffff;
-  font-family: 'Helvetica Neue', sans-serif;
+  background-color: #000;
+  color: #fff;
+  font-family: 'Raleway', sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
 }
 
+/* Επικεφαλίδες */
+h1, h2, h3 {
+  color: #ffffff;
+  font-weight: 600;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+h2 {
+  font-size: 18px;
+}
+
+h3 {
+  font-size: 16px;
+}
+
+/* Container */
+.container {
+  width: 90%;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+
+/* Assignments */
+.assignment {
+  background-color: #111;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 30px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.05);
+}
+
+/* Εικόνες των assignments */
+.assignment img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 10px auto;
+  border-radius: 5px;
+}
+
+/* Κείμενο περιγραφής */
+.assignment p {
+  font-size: 14px;
+  line-height: 1.6;
+  margin-bottom: 10px;
+  color: #ddd;
+}
+
+/* "Περιγραφή:" label */
+.assignment p strong {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 15px;
+  color: #fff;
+}
+
+/* Σύνδεσμοι */
 a {
-  color: #00bcd4;
+  color: #7ecbff;
   text-decoration: none;
 }
 
@@ -42,122 +77,13 @@ a:hover {
   text-decoration: underline;
 }
 
-.container {
-  padding-top: 40px;
-}
-
-h1, h2, h3 {
-  color: #ffffff;
-}
-
-p {
-  color: #dddddd;
-}
-
-/* Project blocks styling */
-
-.column {
-  background-color: rgba(255, 255, 255, 0.05);
-  padding: 20px;
-  border-radius: 12px;
-  transition: transform 0.2s ease, background-color 0.2s ease;
-  box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
-  text-align: center;
-}
-
-.column:hover {
-  transform: scale(1.02);
-  background-color: rgba(255, 255, 255, 0.1);
-}
-
-.column img {
-  border-radius: 8px;
-  max-width: 100%;
-  height: auto;
-}
-
-.column p {
-  margin-top: 10px;
-  color: #eeeeee;
-  font-weight: 300;
-  font-size: 1.1em;
-}
-.four.columns {
-  background-color: rgba(255, 255, 255, 0.05);
-  padding: 20px;
-  border-radius: 12px;
-  transition: transform 0.2s ease, background-color 0.2s ease;
-  box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
-  text-align: center;
-}
-
-.four.columns:hover {
-  transform: scale(1.02);
-  background-color: rgba(255, 255, 255, 0.1);
-}
-
-.four.columns img {
-  border-radius: 8px;
-  max-width: 100%;
-  height: auto;
-}
-
-.four.columns h5 {
-  margin-top: 10px;
-  color: #eeeeee;
-  font-weight: 300;
-  font-size: 1.1em;
-}
-.assignment h2 {
-  color: white;
-  font-size: 2em;
-  margin-bottom: 20px;
-}
-
-.grid {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 30px;
-}
-
-.project {
-  flex: 1 1 200px;
-  max-width: 250px;
-  text-align: center;
-}
-
-.project img {
-  width: 100%;
-  border-radius: 10px;
-  transition: transform 0.3s ease;
-}
-
-.project img:hover {
-  transform: scale(1.05);
-}
-
-.project p {
-  color: white;
-
-
+/* Εμφάνιση assignments το ένα δίπλα στο άλλο (αν θες laterally) */
 .assignments-row {
   display: flex;
-  justify-content: center;
-  gap: 40px;
   flex-wrap: wrap;
-  margin-top: 30px;
+  gap: 20px;
 }
 
-.assignment {
-  width: 300px;
-  text-align: center;
-  background-color: #111;
-  padding: 10px;
-  border-radius: 12px;
-}
-.assignment img {
-  width: 100%;
-  height: auto;
-  border-radius: 8px;
-  margin-bottom: 10px;
+.assignments-row .assignment {
+  flex: 1 1 400px;
 }
