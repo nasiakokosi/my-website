@@ -82,3 +82,30 @@ p {
   font-weight: 300;
   font-size: 1.1em;
 }
+.four.columns {
+  background-color: rgba(255, 255, 255, 0.05);
+  padding: 20px;
+  border-radius: 12px;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+  text-align: center;
+}
+
+.four.columns:hover {
+  transform: scale(1.02);
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.four.columns img {
+  border-radius: 8px;
+  max-width: 100%;
+  height: auto;
+}
+
+.four.columns h5 {
+  margin-top: 10px;
+  color: #eeeeee;
+  font-weight: 300;
+  font-size: 1.1em;
+}
+
