@@ -9,8 +9,8 @@ body {
   padding: 0;
 }
 
-/* Κεντρικός τίτλος Projects */
-h3.half-bottom {
+/* Τίτλος Projects */
+h1.half-bottom {
   font-size: 32px;
   font-weight: bold;
   margin-bottom: 1rem;
@@ -40,4 +40,47 @@ h3.half-bottom {
 }
 
 /* Εμφάνιση του "Περιγραφή:" */
-.assignment
+.assignment p strong {
+  font-size: 15px;
+  color: #eee;
+  display: block;
+  margin-bottom: 8px;
+}
+
+/* Εικόνες assignments */
+.assignment img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 10px auto;
+  border-radius: 6px;
+}
+
+/* Σύνδεσμοι */
+.assignment a {
+  color: #7ecbff;
+  text-decoration: none;
+}
+.assignment a:hover {
+  text-decoration: underline;
+}
+
+/* Κουτιά assignments */
+.assignment {
+  background-color: #111;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.05);
+  width: 100%;
+  max-width: 400px;
+}
+
+/* Στοίχιση assignments σε σειρά */
+.assignments-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: center;
+  margin-top: 30px;
+  padding: 0 20px;
+}
