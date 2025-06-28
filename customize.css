@@ -129,6 +129,24 @@ p {
 .assignment {
   width: 300px;
   text-align: center;
+
+/* Δημιουργεί διάταξη δύο στηλών για τα assignments */
+.assignments-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+/* Κάθε assignment πιάνει τη μισή σειρά */
+.assignment {
+  flex: 1 1 calc(50% - 40px);
+  background-color: #111;
+  color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-sizing: border-box;
+}
+
   min-height: 750px; /* ➕ ΠΡΟΣΘΗΚΗ ΓΙΑ ΟΜΟΙΟ ΥΨΟΣ */
 }
 
